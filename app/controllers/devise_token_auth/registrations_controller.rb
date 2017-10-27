@@ -98,11 +98,11 @@ module DeviseTokenAuth
     end
 
     def sign_up_params
-      params.permit(*params_for_resource(:sign_up), :firstname, :lastname, :address, :phone)
+      params.permit(*params_for_resource(:sign_up), :firstname, :lastname, :document, :address, :phone, :email, :enterprise, :nit, :role)
     end
 
     def account_update_params
-      params.permit(*params_for_resource(:account_update), :firstname, :lastname, :address, :phone)
+      params.permit(*params_for_resource(:account_update), :firstname, :lastname, :document, :address, :phone, :email, :enterprise, :nit, :role)
     end
 
     protected
